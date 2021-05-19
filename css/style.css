@@ -42,3 +42,43 @@ ul
 {
     list-style: none;
     display: flex;
+}
+
+/* HEADER */
+header 
+{
+    display: flex;
+    justify-content: space-between;
+    color: #0065FC;
+}
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+nav ul 
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    list-style-type: none;
+}
+nav ul a:hover 
+{
+    color: #0065FC;
+    text-decoration: overline;
+}
+#registration 
+{
+    font-weight: bold;
+    color: #0065FC;
+    transform: scale(1);
+}
+#registration:hover 
+{
+    transform: scale(1.05);
+    font-size: 1.1rem;
+}
