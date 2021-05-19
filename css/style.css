@@ -1,0 +1,44 @@
+/* GENERAL */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+body 
+{
+    max-width: 1440px;
+    box-sizing: border-box;
+    margin: auto;
+    font-family: raleway, sans-serif;
+}
+.container 
+{
+    width: 95%;
+    margin: auto auto 2.5rem auto;
+}
+h1 
+{
+    font-size: 1.25rem;
+}
+h2 
+{
+    font-size: 1rem;
+    margin: 0.5rem;
+}
+h3 
+{
+    margin: 0rem 0rem 0.5rem 0rem;
+}
+a 
+{
+    text-decoration: none;
+    color: black;
+}
+p 
+{
+    margin-bottom: 1rem;
+}
+.price 
+{
+    font-weight: bold;
+}
+ul 
+{
+    list-style: none;
+    display: flex;
