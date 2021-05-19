@@ -319,7 +319,7 @@ nav ul a:hover
     flex-direction: column;
     font-size: 0.8rem;
 }
-.hebergements__options .cards-container .card__body h2, p, ul 
+.hebergements__options h2, .hebergements__options p, .hebergements__options ul 
 {
     margin: 0.5rem 0rem 0rem 0.5rem;
     padding: 0;
@@ -406,10 +406,158 @@ nav ul a:hover
     margin: 0.5rem;
     font-size: 0.8rem;
 }
-.hebergements__populaires .cards-container .card__body h2, p, ul
+.hebergements__populaires h2, .hebergements__populaires p, .hebergements__populaires ul
 {
     margin: 0rem 1rem 1rem 0rem;
     padding: 0;
+}
+
+/* SECTION 3 */
+.activities 
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.activities .cards-container 
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media (max-width: 605px) 
+{
+    .activities .cards-container 
+    {
+        flex-direction: column;
+    }
+}
+.big-card 
+{
+    transform: scale(1);
+}
+.big-card:hover 
+{
+    transform: scale(1.05);
+}
+.small-card 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 445px;
+    margin-bottom: 2rem;
+}
+.small-card__container 
+{
+    transform: scale(1);
+}
+.small-card__container:hover
+{
+    transform: scale(1.05);
+}
+#vieux-port, #calanques 
+{
+    background-color: white;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 16px #0000002e;
+    width: 300px;
+    height: 445px;
+    margin-right: 1.5rem;
+    margin-bottom: 2rem;
+}
+@media (max-width: 992px) 
+{
+    #vieux-port, #calanques  
+    {
+        margin-right: 0;
+    }
+}
+#vieux-port img, #calanques img 
+{
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 1.5rem 1.5rem 0rem 0rem;
+    text-align: center;
+}
+#pomegues 
+{
+    background-color: white;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 16px #0000002e;
+    width: 300px;
+    height: 235px;
+    margin-right: 1.5rem;
+}
+@media (max-width: 992px) {
+    #pomegues 
+    {
+        margin-right: 0;
+    }
+}
+#pomegues img 
+{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 1.5rem 1.5rem 0rem 0rem;
+    text-align: center;
+    transform: none;
+}
+#frioul 
+{
+    background-color: white;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 16px #0000002e;
+    width: 300px;
+    height: 164px;
+}
+#frioul img 
+{
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 1.5rem 1.5rem 0rem 0rem;
+    text-align: center;
+}
+#notre-dame-de-la-garde 
+{
+    background-color: white;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 16px #0000002e;
+    width: 300px;
+    height: 194px;
+}
+#notre-dame-de-la-garde img 
+{
+    width: 100%;
+    height: 138px;
+    object-fit: cover;
+    border-radius: 1.5rem 1.5rem 0rem 0rem;
+    text-align: center;
+}
+#longchamp 
+{
+    background-color: white;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 16px #0000002e;
+    width: 300px;
+    height: 209px;
+}
+#longchamp img 
+{
+    width: 100%;
+    height: 152px;
+    object-fit: cover;
+    border-radius: 1.5rem 1.5rem 0rem 0rem;
+    text-align: center;
 }
 
 /* FOOTER */
