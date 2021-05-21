@@ -12,16 +12,16 @@ body
     width: 95%;
     margin: auto auto 2.5rem auto;
 }
-h1 
+h2
 {
     font-size: 1.25rem;
 }
-h2 
+h3
 {
     font-size: 1rem;
     margin: 0.5rem;
 }
-h3 
+h4 
 {
     margin: 0rem 0rem 0.5rem 0rem;
 }
@@ -88,10 +88,6 @@ nav ul li:hover
 {
     transform: scale(1.05);
     font-size: 1.1rem;
-}
-@media (max-width: 992px)
-{
-    
 }
 @media (max-width: 605px)
 {
@@ -186,11 +182,10 @@ nav ul li:hover
     {
         display: initial;
         position: absolute;
-        left: 15rem;
+        left: 14rem;
     }
     .destination-form__submit-button--icon input 
     {
-        left: 25%;
         width: 40px;
         height: 40px;
         background-color: #0065FC;
@@ -263,13 +258,6 @@ nav ul li:hover
     display: flex;
     margin-bottom: 0rem;
 }
-@media (max-width: 992px) 
-{
-    .hebergements
-    {
-        flex-direction: column-reverse;
-    }
-}
 .hebergements h1
 {
     margin-top: 0;
@@ -295,14 +283,6 @@ nav ul li:hover
     flex: 2;
     margin-right: 3%;
 }
-@media (max-width: 992px) 
-{
-    .hebergements__options:nth-child(1) 
-    {
-        background-color: white;
-        margin: auto;
-    }
-}
 .hebergements__options--container 
 {
     margin: 2rem;
@@ -310,25 +290,11 @@ nav ul li:hover
     flex-direction: column;
     justify-content: center;
 }
-@media (max-width: 576px) 
-{
-    .hebergements__options--container
-    {
-        margin: auto;
-    }
-}
 .hebergements__options .cards-container 
 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-@media (max-width: 605px) 
-{
-    .hebergements__options .cards-container 
-    {
-        flex-direction: column;
-    }
 }
 .hebergements__options .cards-container .card 
 {
@@ -345,13 +311,6 @@ nav ul li:hover
 .hebergements__options .cards-container .card:hover 
 {
     transform: scale(1.05);
-}
-@media (max-width: 605px) 
-{
-    .hebergements__options .cards-container .card 
-    {
-        width: 100%;
-    }
 }
 .hebergements__options .cards-container .card__image 
 {
@@ -379,6 +338,33 @@ nav ul li:hover
     font-weight: bold;
     font-size: 1.25rem;
 }
+@media (max-width: 992px) 
+{
+    .hebergements
+    {
+        flex-direction: column-reverse;
+    }
+    .hebergements__options:nth-child(1) 
+    {
+        background-color: white;
+        margin: auto;
+    }
+}
+@media (max-width: 605px) 
+{
+    .hebergements__options--container
+    {
+        margin: auto;
+    }
+    .hebergements__options .cards-container 
+    {
+        flex-direction: column;
+    }
+    .hebergements__options .cards-container .card 
+    {
+        width: 100%;
+    }
+}
 /* hébergements populaires */
 .hebergements__populaires:nth-child(2) 
 {
@@ -388,13 +374,6 @@ nav ul li:hover
 .hebergements__populaires--container 
 {
     margin: 2rem auto 0rem auto;
-}
-@media (max-width: 605px) 
-{
-    .hebergements__populaires--container
-    {
-        margin: 0;
-    }
 }
 .hebergements__populaires__header 
 {
@@ -412,7 +391,7 @@ nav ul li:hover
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 .hebergements__populaires .cards-container .card 
 {
@@ -430,13 +409,6 @@ nav ul li:hover
 .hebergements__populaires .cards-container .card:hover 
 {
     transform: scale(1.05);
-}
-@media (max-width: 605px) 
-{
-    .hebergements__populaires .cards-container .card 
-    {
-        width: 100%;
-    }
 }
 .hebergements__populaires .cards-container .card__image 
 {
@@ -459,7 +431,27 @@ nav ul li:hover
     margin: 0rem 1rem 1rem 0rem;
     padding: 0;
 }
-
+.hebergements__populaires h3
+{
+    margin-left: 0rem;
+}
+@media (max-width: 992px)
+{
+    .hebergements
+    {
+        width: 95%;
+    }
+    .hebergements__populaires .cards-container .card
+    {
+        width: 95%;
+        margin: auto auto 2rem auto;
+    }
+    .title-container
+    {
+        width: 95%;
+        margin: auto;
+    }
+}
 /* SECTION 3 */
 .activities 
 {
@@ -473,13 +465,6 @@ nav ul li:hover
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-@media (max-width: 605px) 
-{
-    .activities .cards-container 
-    {
-        flex-direction: column;
-    }
 }
 .big-card 
 {
@@ -516,13 +501,6 @@ nav ul li:hover
     margin-right: 1.5rem;
     margin-bottom: 2rem;
 }
-@media (max-width: 992px) 
-{
-    #vieux-port, #calanques  
-    {
-        margin-right: 0;
-    }
-}
 #vieux-port img, #calanques img 
 {
     width: 100%;
@@ -540,12 +518,6 @@ nav ul li:hover
     width: 300px;
     height: 235px;
     margin-right: 1.5rem;
-}
-@media (max-width: 992px) {
-    #pomegues 
-    {
-        margin-right: 0;
-    }
 }
 #pomegues img 
 {
@@ -607,7 +579,28 @@ nav ul li:hover
     border-radius: 1.5rem 1.5rem 0rem 0rem;
     text-align: center;
 }
-
+@media (max-width: 992px) 
+{
+    #vieux-port, #calanques  
+    {
+        margin-right: 0;
+    }
+    #pomegues 
+    {
+        margin-right: 0;
+    }
+}
+@media (max-width: 605px) 
+{
+    .activities .cards-container 
+    {
+        flex-direction: column;
+    }
+    #vieux-port, #calanques, #pomegues, #frioul, #notre-dame-de-la-garde, #longchamp
+    {
+        width: 100%;
+    }
+}
 /* FOOTER */
 footer 
 {
