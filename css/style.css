@@ -52,31 +52,40 @@ header
     flex-wrap: wrap;
     color: #0065FC;
 }
+.logo
+{
+    flex: 1;
+    margin-top: 1rem;
+}
 nav
 {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     justify-content: center;
-    width: 40%;
 }
 nav ul 
 {
     justify-content: space-between;
     padding-left: 0rem;
 }
+nav ul li
+{
+    border-top: 3px solid white;
+    padding-top: 1rem;
+    margin-left: 7rem;
+}
 nav ul li:hover 
 {
-    color: #0065FC;
-    border-top: #0065FC 1px solid;
-    padding-top: 0.5rem;
+    border-top-color: #0065fc;
 }
-
+nav ul a:hover
+{
+    color: #0065FC;
+}
 #login
 {
-    display: flex;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin : 2.28rem 0rem auto 7rem;
 }
 #registration 
 {
@@ -88,6 +97,17 @@ nav ul li:hover
 {
     transform: scale(1.05);
     font-size: 1.1rem;
+}
+@media (max-width: 992px)
+{
+    nav ul li
+    {
+        margin-left: 5rem;
+    }
+    #login
+    {
+        margin-left: 5rem;
+    }
 }
 @media (max-width: 605px)
 {
@@ -105,6 +125,7 @@ nav ul li:hover
     {
         border-bottom: 3px solid #f1eeee;
         padding-bottom: 1rem;
+        margin-left: auto;
         width: 50%;
         text-align: center;
     }
@@ -131,6 +152,7 @@ nav ul li:hover
 {
     display: flex;
     height: 40px;
+    margin-top: 1.5rem;
 }
 .destination-form__map-point 
 {
@@ -209,7 +231,7 @@ nav ul li:hover
     flex-wrap: wrap;
     width: 70%;
     font-weight: bold;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 .search-filter__options 
 {
@@ -294,7 +316,7 @@ nav ul li:hover
 }
 .hebergements__options--container 
 {
-    margin: 2rem;
+    margin: 0rem 2rem 2rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -307,6 +329,7 @@ nav ul li:hover
 }
 .hebergements__options h2
 {
+    margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
 .hebergements__options .card 
@@ -382,7 +405,7 @@ nav ul li:hover
 }
 .hebergements__populaires--container 
 {
-    margin: 2rem auto 0rem auto;
+    margin: 0rem auto 0rem auto;
 }
 .hebergements__populaires__header 
 {
@@ -397,6 +420,7 @@ nav ul li:hover
 }
 .hebergements__populaires h2 
 {
+    margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
 .fa-chart-line
@@ -651,7 +675,3 @@ footer .container ul li
 {
     margin: 0.5rem;
 }
-
-
-
-
