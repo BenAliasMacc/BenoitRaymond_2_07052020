@@ -448,6 +448,10 @@ nav ul li:hover
     {
         width: 95%;
     }
+    .hebergements__populaires--container
+    {
+        width: 100%;
+    }
     .hebergements__populaires .card
     {
         width: 95%;
