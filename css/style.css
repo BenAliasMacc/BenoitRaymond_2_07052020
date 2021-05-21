@@ -112,6 +112,7 @@ nav ul li:hover
     {
         border-top: none;
         border-bottom-color: #0065fc;
+        padding-top: 0rem;
     }
     #login
     {
@@ -253,12 +254,12 @@ nav ul li:hover
 }
 
 /* SECTION 2 */
-.hebergements
+#hebergements
 {
     display: flex;
     margin-bottom: 0rem;
 }
-.hebergements h1
+#hebergements h1
 {
     margin-top: 0;
     margin-bottom: 0;
@@ -276,6 +277,14 @@ nav ul li:hover
 .empty-star 
 {
     color: #d9d9d9;
+}
+@media (max-width: 992px) 
+{
+    #hebergements
+    {
+        flex-direction: column-reverse;
+        width: 95%;
+    }
 }
 /* hébergements à Marseille */
 .hebergements__options:nth-child(1) 
@@ -344,10 +353,6 @@ nav ul li:hover
 }
 @media (max-width: 992px) 
 {
-    .hebergements
-    {
-        flex-direction: column-reverse;
-    }
     .hebergements__options:nth-child(1) 
     {
         background-color: white;
@@ -444,10 +449,6 @@ nav ul li:hover
 }
 @media (max-width: 992px)
 {
-    .hebergements
-    {
-        width: 95%;
-    }
     .hebergements__populaires--container
     {
         width: 100%;
@@ -470,18 +471,18 @@ nav ul li:hover
     }
 }
 /* SECTION 3 */
-.activities 
+#activities 
 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
 }
-.activities h2
+#activities h2
 {
     margin-bottom: 1.5rem;
 }
-.activities .cards-container 
+#activities .cards-container 
 {
     width: 100%;
     display: flex;
@@ -614,7 +615,7 @@ nav ul li:hover
 }
 @media (max-width: 605px) 
 {
-    .activities .cards-container 
+    #activities .cards-container 
     {
         flex-direction: column;
     }
