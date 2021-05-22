@@ -401,6 +401,10 @@ nav ul a:hover
 .hebergements__populaires:nth-child(2) 
 {
     flex: 1;
+
+
+
+    
     display: flex;
 }
 .hebergements__populaires--container 
@@ -488,7 +492,8 @@ nav ul a:hover
         margin: auto;
     }
 }
-@media (max-width: 992px){
+@media (max-width: 992px)
+{
     .hebergements__populaires .card__image
     {
         width: 100%;
@@ -504,6 +509,7 @@ nav ul a:hover
 }
 #activities h2
 {
+    margin-top: 2rem;
     margin-bottom: 1.5rem;
 }
 #activities .cards-container 
@@ -646,6 +652,11 @@ nav ul a:hover
     #vieux-port, #calanques, #pomegues, #frioul, #notre-dame-de-la-garde, #longchamp
     {
         width: 95%;
+        height: 200px;
+    }
+    #vieux-port img, #calanques img, #pomegues img, #frioul img, #notre-dame-de-la-garde img, #longchamp img
+    {
+        height: 155px;
     }
 }
 /* FOOTER */
