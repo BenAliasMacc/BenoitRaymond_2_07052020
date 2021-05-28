@@ -162,6 +162,7 @@ nav ul a:hover
 {
     margin-bottom: 2rem;
 }
+
 .fa-info-circle 
 {
     color: #0065FC;
@@ -224,6 +225,10 @@ input::placeholder
 }
 @media (max-width: 992px) 
 {
+    h1, .search p, form, .search-filter, .info
+    {
+        margin-left: 1rem;
+    }
     .destination-form__submit-button--text 
     {
         display: none;
