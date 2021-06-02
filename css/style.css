@@ -22,7 +22,7 @@ h2
 }
 h3
 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: 0.5rem;
 }
 h4 
@@ -380,7 +380,6 @@ input::placeholder
     margin: 0rem 1rem 2rem 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 .hebergements__options .cards-container 
 {
@@ -501,7 +500,7 @@ input::placeholder
     overflow: hidden;
     box-shadow: 0px 0px 16px #0000002e;
     display: flex;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     width: 345px;
     height: 145px;
     padding: 0.3rem;
