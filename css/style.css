@@ -22,7 +22,7 @@ h2
 }
 h3
 {
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin: 0.5rem;
 }
 h4 
@@ -95,10 +95,6 @@ nav ul a:hover
     padding-top: 2.1rem;
 }
 
-#login:hover
-{
-    border-top-color: #0065fc;
-}
 #registration 
 {
     font-weight: bold;
@@ -395,7 +391,6 @@ input::placeholder
 .hebergements__options .card 
 {
     border-radius: 1.5rem;
-    overflow: hidden;
     box-shadow: 0px 0px 16px #0000002e;
     flex: 30%;
     height: 200px;
@@ -421,6 +416,7 @@ input::placeholder
     display: flex;
     flex-direction: column;
     font-size: 0.8rem;
+    white-space: nowrap;
 }
 .hebergements__options h3, .hebergements__options p, .hebergements__options ul 
 {
@@ -524,7 +520,7 @@ input::placeholder
     flex-direction: column;
     justify-content: space-between;
     margin: 0.5rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 .hebergements__populaires h3, .hebergements__populaires p
 {
@@ -561,6 +557,21 @@ input::placeholder
         width: 100%;
     }
 }
+@media (max-width: 605px)
+{
+    .hebergements__populaires .card a
+    {
+        width: 100%;
+        height: auto;
+        overflow:hidden;
+    }
+    .hebergements__populaires .card__image 
+    {
+        width: 100%;
+        max-width: 148px;
+        height: auto;
+    }
+}
 /* SECTION 3 */
 #activities h2
 {
@@ -587,6 +598,7 @@ input::placeholder
     border-radius: 1.5rem;
     box-shadow: 0px 0px 16px #0000002e;
     transform: scale(1);
+    white-space: nowrap;
 }
 #activities .card:hover
 {
